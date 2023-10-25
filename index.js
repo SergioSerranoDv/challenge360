@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use("/", productsRouter)
 app.get("/", (req, res) => {
   res.send({
-    instructions: "💻 Hi, this the API 1.0.0 for the NodeJS challange ",
+    instructions: "💻 Hi, this is the API for the NodeJS challange ",
     endpoints: {
       products: "/products",
       prices: "/products/:user_id/:nombre_producto",
