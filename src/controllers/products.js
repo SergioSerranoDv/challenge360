@@ -1,6 +1,6 @@
 import productsModel from "../models/products.js"
 import usersModel from "../models/users.js"
-export const getProducts = async (res) => {
+export const getProducts = async (req, res) => {
   try {
     const products = await productsModel.find({
       existencia: { $gt: 0 },
